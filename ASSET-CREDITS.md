@@ -37,7 +37,7 @@
 
 本專案重現的是靜態首頁，不是原站服務的完整實作。頁面中的登入、開始使用、方案、隱私政策及支援連結會連至 [intro3d.com](https://intro3d.com/)。頁面所呈現的價格與服務功能不代表本專案提供這些服務，也不保證資訊仍是最新版本。
 
-公開 GitHub repo：[dengjingsheng20030609-bot/pocket-introduce](https://github.com/dengjingsheng20030609-bot/pocket-introduce)。推送時只會納入本清單列明、且不含未使用 `assets/logo.webp` 的檔案。
+公開 GitHub repo：[dengjingsheng20030609-bot/pocket-introduce](https://github.com/dengjingsheng20030609-bot/pocket-introduce) 已發布本清單所列的 31 個專案檔案，且未包含未使用的 `assets/logo.webp`。公開 Worker 預覽：[intro3d-clone.nine-hippopotamus.workers.dev](https://intro3d-clone.nine-hippopotamus.workers.dev/) 已更新並通過存取檢查。
 
 ## 公開發布檢查
 
@@ -45,4 +45,5 @@
 - [x] 未使用的 `assets/logo.webp` 排除於公開 repo 與 Worker 部署之外。
 - [x] 保留字型 OFL-1.1 授權副本；專案原創程式碼與 SVG 字標採 MIT。
 - [x] README 說明專案為靜態仿製頁，並非原站官方產品。
-- [ ] 發布後再確認公開 repo 內容及 Worker 預覽均可正常存取。
+- [x] 公開 repo 的 31 個檔案與 Worker 預覽均已驗收；首頁與 23 個素材路徑回應 HTTP 200。
+- [x] 本次部署使用的 Cloudflare API Token 已於驗收後撤銷。
