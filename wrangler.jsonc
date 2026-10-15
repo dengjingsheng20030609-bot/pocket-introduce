@@ -1,0 +1,8 @@
+{
+  "name": "intro3d-clone",
+  "compatibility_date": "2026-10-15",
+  "workers_dev": true,
+  "assets": {
+    "directory": "."
+  }
+}

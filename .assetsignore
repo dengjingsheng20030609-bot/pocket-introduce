@@ -1,0 +1,15 @@
+# Project documentation and deployment config
+README.md
+ASSET-CREDITS.md
+.gitignore
+.assetsignore
+wrangler.jsonc
+
+# Development data
+.git/
+.wrangler/
+node_modules/
+
+# Not served by the website
+licenses/
+assets/logo.webp
