@@ -28,7 +28,7 @@ python3 -m http.server 8000
 
 ## Cloudflare Workers 部署
 
-專案使用 `wrangler.jsonc` 部署靜態資產，目標 Worker 名稱為 `intro3d-clone`。部署前請在本機設定 `CLOUDFLARE_API_TOKEN` 與 `CLOUDFLARE_ACCOUNT_ID` 環境變數；Token 不要寫入程式碼或提交到版本庫。對既有 Worker，建議使用僅有該 Worker `Editor` 權限的短效 Token。
+專案使用 `wrangler.jsonc` 部署靜態資產，目標 Worker 名稱為 `intro3d-clone`。部署前請在本機設定 `CLOUDFLARE_API_TOKEN` 與 `CLOUDFLARE_ACCOUNT_ID` 環境變數；Token 不要寫入程式碼或提交到版本庫。對既有 Worker，請使用資源範圍僅限該 Worker 的 `Editor` Token、設定短效期限，並在部署驗收後撤銷；避免使用「所有帳戶」範圍。
 
 ```bash
 npx wrangler@latest deploy
@@ -50,6 +50,8 @@ npx wrangler@latest deploy
 
 - 已檢查首頁的本機素材引用：**23 個唯一路徑，未發現缺少檔案**。
 - 本機 HTTP 預覽正常；375px 手機寬度預覽已檢查。
+- 公開 GitHub repo 已發布 **31 個檔案**，未包含未使用的舊 logo。
+- 公開 Worker 預覽已更新：首頁與 23 個本地素材均回應 HTTP 200；README、部署設定與舊 logo 路徑不公開。
 - 本專案沒有套件安裝或建置流程，因此沒有 package manager、build 或自動化測試命令。
 
 ## 授權範圍
